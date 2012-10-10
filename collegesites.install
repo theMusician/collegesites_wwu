@@ -2,19 +2,19 @@
 /**
 * @file
 * Install, update and uninstall functions
-* for the College Site installation profile. */
+* for the College Sites installation profile. */
 /**
 * Implements hook_install().
 *
 * Run the hook_install() function from the minimal
 *  profile as part of this profile.
 */
-function linuxjournal_install() {
+function collegesites_install() {
  // Utilize the hook_install() implementation from
  // the minimal profile.
  include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install'; 
  minimal_install();
-}
+
 
 // Enable the administration theme. 
 
@@ -26,3 +26,5 @@ db_update('system')
 	->execute();
 variable_set('admin_theme', $admin_theme);
 variable_set('node_admin_theme', '1');
+
+}
