@@ -1,0 +1,78 @@
+name = College Sites
+description = A starting point for college websites.
+version = VERSION
+core = 7.x
+
+;Core Modules
+
+dependencies[] = aggregator
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+
+;Base Contributed Modules 
+
+dependencies[] = addressfield
+dependencies[] = advanced_help
+dependencies[] = auto_entitylabel
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = email
+dependencies[] = fullcalendar
+dependencies[] = google_appliance
+dependencies[] = hierarchical_select
+dependencies[] = image_caption
+dependencies[] = image_resize_filter
+dependencies[] = insert
+dependencies[] = link
+dependencies[] = media
+dependencies[] = media_youtube
+dependencies[] = pathauto
+dependencies[] = phone
+dependencies[] = token
+dependencies[] = wysiwyg
+dependencies[] = views
+dependencies[] = views_slideshow
+
+;Acilliary Contributed Modules
+
+dependencies[] = admin_menu
+dependencies[] = features
+dependencies[] = field_group
+dependencies[] = google_analytics
+dependencies[] = google_appliance_suggest
+dependencies[] = iconizer
+dependencies[] = imagecrop
+dependencies[] = libraries
+dependencies[] = menu_block
+dependencies[] = nodequeue
+dependencies[] = taxonomy_csv
+dependencies[] = workbench
+dependencies[] = workbench_access
+dependencies[] = workbench_media
+dependencies[] = workbench_moderation
+dependencies[] = xmlsitemap
