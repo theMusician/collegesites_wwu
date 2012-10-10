@@ -26,4 +26,4 @@ projects[drupal][version] = "7"
 ; Add the College Sites Install Profile 
 projects[collegesites][type] = profile 
 projects[collegesites][download][type] = git 
-projects[collegesites][download][url] = https://github.com/maxbrons/wwu_collegesites.git
+projects[collegesites][download][url] = https://github.com/theMusician/collegesites_wwu.git
