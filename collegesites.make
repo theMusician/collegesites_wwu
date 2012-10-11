@@ -63,7 +63,7 @@ projects[email][type] = "module"
 projects[fullcalendar][version] = 2.0-rc1
 projects[fullcalendar][type]= "module"
 
-projects[google_appliance][version] = 1.8
+projects[google_appliance][version] = 1.9
 projects[google_appliance][type] = "module"
 
 projects[hierarchical_select][version] = 3.0-alpha5
@@ -142,7 +142,7 @@ projects[menu_block][type] = "module"
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][type] = "module"
 
-projects[taxonomy_csv][version] = 5.1
+projects[taxonomy_csv][version] = 5.10
 projects[taxonomy_csv][type] = "module"
 
 projects[workbench][version] = 1.1
