@@ -27,8 +27,6 @@ db_update('system')
 variable_set('admin_theme', $admin_theme);
 variable_set('node_admin_theme', '1');
 
-}	
-
 // Configure Text Formats
 // Text formats can be found in the filter table of the db
 $full_html_format = array(
