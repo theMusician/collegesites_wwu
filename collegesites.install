@@ -40,7 +40,7 @@ $full_html_format = array(
         'status' => 1,
       ),    
 	  // Image Resize Filter.
-	  'image_resize_filter' => array (
+	  'image_resize_filter' => array(
 	  	'weight' => 0,
 	  	'status' => 1,
 	  ),
