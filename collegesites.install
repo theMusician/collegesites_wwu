@@ -247,13 +247,13 @@ $full_html_format = array(
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
-	
+/*	
   // Create the Editor Role for use with Workbench.
   $editor_role = new stdClass();
   $editor_role->name = 'editor';
   $editor_role->weight = 3;
   user_role_save($editor_role);
-//  user_role_grant_permissions($editor_role->rid, array('access content', 'access comments', 'post comments', 'skip comment approval', $clean_html_perimssion, 'access administration menu', 'access administration pages', 'access content overview', 'access contextual links', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'administer menu', 'assign workbench access', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'moderate content from needs_review to draft', 'moderate content from needs_review to published' , 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
+ user_role_grant_permissions($editor_role->rid, array('access content', 'access comments', 'post comments', 'skip comment approval', $clean_html_perimssion, 'access administration menu', 'access administration pages', 'access content overview', 'access contextual links', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'administer menu', 'assign workbench access', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'moderate content from needs_review to draft', 'moderate content from needs_review to published' , 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
   //Set this as the Editor role
   //variable_set('user_editor_role', $editor_role->rid);
   
@@ -262,10 +262,10 @@ $full_html_format = array(
   $writer_role->name = 'writer';
   $writer_role->weight = 4;
   user_role_save($writer_role);
-//  user_role_grant_permissions($writer_role->rid, array('access administration pages', 'access content overview', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'assign workbench access', 'create department content', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
+  user_role_grant_permissions($writer_role->rid, array('access administration pages', 'access content overview', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'assign workbench access', 'create department content', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
  //Set this as the Writer role
  // variable_set('user_writer_role', $writer_role->rid);
-
+*/
   // Create a Home link in the main menu.
   $item = array(
     'link_title' => st('Home'),
