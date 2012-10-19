@@ -29,7 +29,6 @@ variable_set('node_admin_theme', '1');
 
 // Configure Text Formats
 // Text formats can be found in the filter table of the db
-/*
   $clean_html_format = array(
     'format' => 'clean_html',
     'name' => 'Clean HTML',
@@ -54,7 +53,7 @@ variable_set('node_admin_theme', '1');
   );
   $clean_html_format = (object) $clean_html_format;
   filter_format_save($clean_html_format);
- */ 
+ 
 $full_html_format = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
@@ -281,7 +280,6 @@ $full_html_format = array(
   menu_rebuild();
 
 //WYSIWYG Settings for CKeditor based on Linux Journal Drupal special edition, page 96.
-/*
 $clean_html_settings = array( 
 	'default' => 1,
 	'user_choose' => 0, 
@@ -350,7 +348,7 @@ $clean_html_settings = array(
 	);
 // Save the record to the database. 
 	drupal_write_record('wysiwyg', $record);
-*/
+
 //WYSIWYG Settings for CKeditor based on Linux Journal Drupal special edition, page 96.
 $full_html_settings = array( 
 	'default' => 1,
