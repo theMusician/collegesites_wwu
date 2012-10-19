@@ -60,6 +60,9 @@ projects[entityreference][type] = "module"
 projects[email][version] = 1.2
 projects[email][type] = "module"
 
+projects[file_entity] = 2.0-unstable6
+projects[file_entity] = "module"
+
 projects[fullcalendar][version] = 2.0-rc1
 projects[fullcalendar][type]= "module"
 
@@ -68,6 +71,9 @@ projects[google_appliance][type] = "module"
 
 projects[hierarchical_select][version] = 3.0-alpha5
 projects[hierarchical_select][type]= "module"
+
+projects[htmlpurifier][version] = 1.0-rc1
+projects[htmlpurifier][type] = "module"
 
 projects[image_caption][version] = 1.x-dev
 projects[image_caption][type] = "module"
@@ -81,7 +87,7 @@ projects[insert][type]= "module"
 projects[link][version] = 1.0
 projects[link][type] = "module"
 
-projects[media][version] = 1.2
+projects[media][version] = 2.0-unstable6
 projects[media][type]= "module"
 
 projects[media_youtube][version] = 2.0-rc1
@@ -96,7 +102,7 @@ projects[phone][type]= "module"
 projects[token][version] = 1.4
 projects[token][type] = "module"
 
-projects[wysiwyg][version] = 2.1
+projects[wysiwyg][version] = 2.2	
 projects[wysiwyg][type] = "module"
 
 projects[views][version] = 3.5
@@ -126,7 +132,7 @@ projects[google_appliance_suggest][version] = 1.1
 projects[google_appliance_suggest][type] = "module"
 
 ;Manually retrieve the icons from http://thepanz.netsons.org/post/drupal-iconizer-module-d7-icons
-;and put them in the folders of the iconizer module
+;and put them in the folders of the iconizer module if you want admin icons
 projects[iconizer][version] = 1.2
 projects[iconizer][type]= "module"
 
@@ -151,7 +157,7 @@ projects[workbench][type]= "module"
 projects[workbench_access][version] = 1.0
 projects[workbench_access][type]= "module"
 
-projects[workbench_media][version] = 1.1
+projects[workbench_media][version] = 2.1
 projects[workbench_media][type]= "module"
 
 projects[workbench_moderation][version] = 1.2
@@ -182,6 +188,9 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip"
+
+libraries[htmlpurifier][download][type] = "file"
+libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.4.0.tar.gz"
 
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
