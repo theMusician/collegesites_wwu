@@ -60,8 +60,8 @@ projects[entityreference][type] = "module"
 projects[email][version] = 1.2
 projects[email][type] = "module"
 
-projects[file_entity] = 2.0-unstable6
-projects[file_entity] = "module"
+projects[file_entity][version] = 2.0-unstable6
+projects[file_entity][type] = "module"
 
 projects[fullcalendar][version] = 2.0-rc1
 projects[fullcalendar][type]= "module"
