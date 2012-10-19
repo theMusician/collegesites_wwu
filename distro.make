@@ -27,4 +27,4 @@ projects[drupal][version] = "7"
 projects[collegesites][type] = profile 
 projects[collegesites][download][type] = git 
 projects[collegesites][download][url] = https://github.com/theMusician/collegesites_wwu.git
-projects[collegesites][download][url] = master
+projects[collegesites][download][url] = dev
