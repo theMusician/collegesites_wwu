@@ -29,6 +29,32 @@ variable_set('node_admin_theme', '1');
 
 // Configure Text Formats
 // Text formats can be found in the filter table of the db
+
+  $clean_html_format = array(
+    'format' => 'clean_html',
+    'name' => 'Clean HTML',
+    'weight' => 0,
+    'filters' => array(
+      //Image Resize filter
+      'image_resize_filter' => array(
+	  	'weight' => -45,
+	  	'status' => 1,
+	  ),
+      // Media filter
+      'media_filter' => array(
+	  	'weight' => -46,
+	  	'status' => 1,
+	  ),
+      // HTML filter.
+      'html_purifier_advanced' => array(
+        'weight' => -44,
+        'status' => 1,
+      ),
+    ),
+  );
+  $clean_html_format = (object) $clean_html_format;
+  filter_format_save($clean_html_format);
+  
 $full_html_format = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
@@ -205,9 +231,9 @@ $full_html_format = array(
   field_create_instance($instance);
   
    // Enable default permissions for system roles.
-//  $filtered_html_permission = filter_permission_name($filtered_html_format);
-//  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments', $filtered_html_permission));
-//  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'access comments', 'post comments', 'skip comment approval', $filtered_html_permission));
+   $clean_html_permission = filter_permission_name($clean_html_format);
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments', $clean_html_permission));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', 'access comments', 'post comments', 'skip comment approval', $clean_html_permission));
 
   // Create a default role for site administrators, with all available permissions assigned.
   $admin_role = new stdClass();
@@ -222,6 +248,20 @@ $full_html_format = array(
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
+	
+  // Create the Editor Role for use with Workbench.
+  $editor_role = new stdClass();
+  $editor_role->name = 'editor';
+  $editor_role->weight= 3;
+  user_role_save($editor_role);
+  user_role_grant_permissions($editor_role->rid, array('access content', 'access comments', 'post comments', 'skip comment approval', $clean_html_perimssions, 'access administration menu', 'access administration pages', 'access content overview', 'access contextual links', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'administer menu', 'assign workbench access', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'moderate content from needs_review to draft', 'moderate content from needs_review to published' , 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
+  
+ //Create the Writer role for use with Workbench.
+  $writer_role = new stdClass();
+  $writer_role->name = 'writer';
+  $writer_role->weight= 4;
+  user_role_save($writer_role);
+  user_role_grant_permissions($writer_role->rid, array('access administration pages', 'access content overview', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'assign workbench access', 'create department content', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
 
   // Create a Home link in the main menu.
   $item = array(
