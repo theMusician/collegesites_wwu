@@ -63,7 +63,7 @@ projects[email][type] = "module"
 projects[file_entity][version] = 2.0-unstable6
 projects[file_entity][type] = "module"
 
-projects[fullcalendar][version] = 2.0-rc1
+projects[fullcalendar][version] = 2.0
 projects[fullcalendar][type]= "module"
 
 projects[google_appliance][version] = 1.9
@@ -81,6 +81,12 @@ projects[image_caption][type] = "module"
 projects[image_resize_filter][version] = 1.13
 projects[image_resize_filter][type]= "module"
 
+projects[imce][version] = 1.6
+projects[imce][type] = "module"
+
+projects[imce_wysiwyg][version] = 1.0
+projects[imce_wysiwyg][type] = "module"
+
 projects[insert][version] = 1.2
 projects[insert][type]= "module"
 
@@ -92,6 +98,9 @@ projects[media][type]= "module"
 
 projects[media_youtube][version] = 2.0-rc1
 projects[media_youtube][type] = "module"
+
+projects[media_vimeo][version] = 1.0-beta5
+projects[media_vimeo][type] = "module"
 
 projects[pathauto][version] = 1.2
 projects[pathauto][type] = "module"
@@ -118,6 +127,9 @@ projects[views_slideshow][type] = "module"
 
 projects[admin_menu][version] = 3.0-rc3
 projects[admin_menu][type] = "module"
+
+projects[colorbox][version] = 1.4
+projects[colorbox][type] = "module"
 
 projects[features][version] = 1.0
 projects[features][type] = "module"
@@ -184,7 +196,10 @@ projects[zen][type] = "theme"
 ; ---------
 
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
+libraries[ckeditor][download][url] = "http://www.jacklmoore.com/colorbox/colorbox.zip"
+
+libraries[colorbox][download][type] = "file"
+libraries[colorbox][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
 
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip"
