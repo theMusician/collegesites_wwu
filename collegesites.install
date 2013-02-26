@@ -335,7 +335,7 @@ $clean_html_settings = array(
 	'paste_auto_cleanup_on_paste' => 1,
 	'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div', 
 	'css_setting' => 'self',
-	'css_path' => '',
+	'css_path' => '/sites/all/themes/wwuzen/css/pages.css',
 	'css_classes' => '', );
 
 	// Create the record. 
@@ -417,7 +417,7 @@ $full_html_settings = array(
 	'paste_auto_cleanup_on_paste' => 1,
 	'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div', 
 	'css_setting' => 'self',
-	'css_path' => '',
+	'css_path' => '/sites/all/themes/wwuzen/css/pages.css',
 	'css_classes' => '', );
 
 	// Create the record. 
