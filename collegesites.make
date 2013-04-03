@@ -4,33 +4,33 @@
 ; ----------------
 ;
 ; This is a working makefile - try it! Any line starting with a `;` is a comment.
-  
+
 ; Core version
 ; ------------
 ; Each makefile should begin by declaring the core version of Drupal that all
 ; projects should be compatible with.
-  
+
 core = 7.x
-  
+
 ; API version
 ; ------------
 ; Every makefile needs to declare its Drush Make API version. This version of
 ; drush make uses API version `2`.
-  
+
 api = 2
-  
+
 ; Core project
 ; ------------
 ; In order for your makefile to generate a full Drupal site, you must include
 ; a core project. This is usually Drupal core, but you can also specify
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
-  
+
 ; Drupal 7.x. Requires the `core` property to be set to 7.x.
 projects[drupal][version] = "7"
 
-  
-  
+
+
 ; Base Modules
 ; --------
 projects[addressfield][version] = 1.0-beta3
@@ -93,6 +93,9 @@ projects[insert][type]= "module"
 projects[link][version] = 1.0
 projects[link][type] = "module"
 
+projects[linkit][version] = 2.6
+projects[linkit][type] = "module"
+
 projects[media][version] = 2.0-unstable6
 projects[media][type]= "module"
 
@@ -111,7 +114,7 @@ projects[phone][type]= "module"
 projects[token][version] = 1.4
 projects[token][type] = "module"
 
-projects[wysiwyg][version] = 2.2	
+projects[wysiwyg][version] = 2.2
 projects[wysiwyg][type] = "module"
 
 projects[views][version] = 3.5
@@ -177,7 +180,7 @@ projects[workbench_moderation][type]= "module"
 
 projects[xmlsitemap][version] = 2.0-rc1
 projects[xmlsitemap][type] = "module"
-  
+
 
 ; Themes
 ; --------
@@ -190,8 +193,8 @@ projects[tao][type] = "theme"
 
 projects[zen][version] = 5.1
 projects[zen][type] = "theme"
-  
-  
+
+
 ; Libraries
 ; ---------
 
