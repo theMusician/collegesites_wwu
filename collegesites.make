@@ -67,7 +67,7 @@ projects[entityreference][type] = "module"
 projects[email][version] = 1.2
 projects[email][type] = "module"
 
-projects[feeds][version] = 2.0-alphpa8
+projects[feeds][version] = 2.0-alpha8
 projects[feeds][type] = "module"
 
 projects[file_entity][version] = 2.0-unstable7
@@ -103,7 +103,7 @@ projects[insert][type]= "module"
 projects[jquery_update][version] = 2.3
 projects[jquery_update][type]= "module"
 
-projects[job_scheduler][version] = 2.0-alphpa3
+projects[job_scheduler][version] = 2.0-alpha3
 projects[job_scheduler][type]= "module"
 
 projects[link][version] = 1.1
@@ -209,7 +209,7 @@ projects[workbench][type]= "module"
 projects[workbench_access][version] = 1.2
 projects[workbench_access][type]= "module"
 
-projects[workbench_media][version] = 2.1-dev
+projects[workbench_media][version] = 2.1
 projects[workbench_media][type]= "module"
 
 projects[workbench_moderation][version] = 1.3
@@ -235,7 +235,7 @@ projects[wwuzen][download][type] = "git"
 projects[wwuzen][download][url] = "git@bitbucket.org:wwuweb/wwuzen.git"
 projects[wwuzen][type] = "theme"
 
-projects[wwuruibk][download][type] = "git"
+projects[wwurubik][download][type] = "git"
 projects[wwurubik][download][url] = "git@bitbucket.org:wwuweb/wwurubik.git"
 projects[wwurubik][type] = "theme"
 
@@ -246,10 +246,10 @@ libraries[cas][download][type] = "file"
 libraries[cas][download][url] = "http://downloads.jasig.org/cas-clients/php/current/CAS-1.3.2.tgz"
 
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://www.jacklmoore.com/colorbox/colorbox.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
 
 libraries[colorbox][download][type] = "file"
-libraries[colorbox][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip"
