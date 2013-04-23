@@ -152,7 +152,7 @@ projects[views_slideshow][version] = 3.0
 projects[views_slideshow][type] = "module"
 
 projects[wwuzen_gsa][download][type] = "git"
-projects[wwuzen_gsa][download][url] = "git@bitbucket.org:wwuweb/wwu-google-search-appliance.git"
+projects[wwuzen_gsa][download][url] = "https://bitbucket.org/wwuweb/wwu-google-search-appliance.git"
 projects[wwuzen_gsa][type] = "module"
 
 
@@ -232,11 +232,11 @@ projects[zen][version] = 5.1
 projects[zen][type] = "theme"
 
 projects[wwuzen][download][type] = "git"
-projects[wwuzen][download][url] = "git@bitbucket.org:wwuweb/wwuzen.git"
+projects[wwuzen][download][url] = "https://bitbucket.org/wwuweb/wwuzen.git"
 projects[wwuzen][type] = "theme"
 
 projects[wwurubik][download][type] = "git"
-projects[wwurubik][download][url] = "git@bitbucket.org:wwuweb/wwurubik.git"
+projects[wwurubik][download][url] = "https://bitbucket.org/wwuweb/wwurubik.git"
 projects[wwurubik][type] = "theme"
 
 ; Libraries
@@ -255,7 +255,7 @@ libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip"
 
 libraries[htmlpurifier][download][type] = "file"
-libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.4.0.tar.gz"
+libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.5.0.zip"
 
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
