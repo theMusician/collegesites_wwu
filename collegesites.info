@@ -31,11 +31,13 @@ dependencies[] = text
 dependencies[] = update
 dependencies[] = user
 
-;Base Contributed Modules 
+;Base Contributed Modules
 
+dependencies[] = accordion_menu
 dependencies[] = addressfield
 dependencies[] = advanced_help
 dependencies[] = auto_entitylabel
+dependencies[] = cas
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = diff
@@ -50,26 +52,36 @@ dependencies[] = htmlpurifier
 dependencies[] = image_caption
 dependencies[] = image_resize_filter
 dependencies[] = insert
+dependencies[] = jquery_update
+dependencies[] = job_scheduler
 dependencies[] = link
 dependencies[] = media
 dependencies[] = media_youtube
+dependencies[] = media_vimeo
+dependencies[] = panels
 dependencies[] = pathauto
+dependencies[] = pathologic
 dependencies[] = phone
 dependencies[] = token
 dependencies[] = wysiwyg
 dependencies[] = views
+dependencies[] = views_bulk_operations
 dependencies[] = views_slideshow
 
 ;Acilliary Contributed Modules
 
 dependencies[] = admin_menu
+dependencies[] = backup_migrate
 dependencies[] = features
+dependencies[] = feeds
 dependencies[] = field_group
 dependencies[] = googleanalytics
+dependencies[] = google_appliance
 dependencies[] = google_appliance_suggest
 dependencies[] = iconizer
 dependencies[] = imagecrop
 dependencies[] = libraries
+dependencies[] = link_checker
 dependencies[] = menu_block
 dependencies[] = nodequeue
 dependencies[] = taxonomy_csv
@@ -77,4 +89,5 @@ dependencies[] = workbench
 dependencies[] = workbench_access
 dependencies[] = workbench_media
 dependencies[] = workbench_moderation
+dependencies[] = wwuzen_gsa
 dependencies[] = xmlsitemap
