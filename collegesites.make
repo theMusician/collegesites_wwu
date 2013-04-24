@@ -257,7 +257,7 @@ libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/arch
 
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.6.0.zip"
-libraries[fullcalendar][download][subtree] = "fullcalendar-1.6.0/fullcalendar"
+libraries[fullcalendar][download][subtree] = "fullcalendar"
 
 libraries[htmlpurifier][download][type] = "file"
 libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.5.0.zip"
