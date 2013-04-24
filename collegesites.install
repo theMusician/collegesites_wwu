@@ -12,17 +12,17 @@
 function collegesites_install() {
  // Utilize the hook_install() implementation from
  // the minimal profile.
- include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install'; 
+ include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
  minimal_install();
 
 
-// Enable the administration theme. 
+// Enable the administration theme.
 
-$admin_theme = 'rubik'; 
+$admin_theme = 'wwurubik';
 db_update('system')
-	->fields(array('status' => 1)) 
-	->condition('type', 'theme') 
-	->condition('name', $admin_theme) 
+	->fields(array('status' => 1))
+	->condition('type', 'theme')
+	->condition('name', $admin_theme)
 	->execute();
 variable_set('admin_theme', $admin_theme);
 variable_set('node_admin_theme', '1');
@@ -53,7 +53,7 @@ $clean_html_format = array(
   );
   $clean_html_format = (object) $clean_html_format;
   filter_format_save($clean_html_format);
- 
+
 $full_html_format = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
@@ -63,7 +63,7 @@ $full_html_format = array(
       'filter_url' => array(
         'weight' => 0,
         'status' => 1,
-      ),    
+      ),
 	  // Image Resize Filter.
 	  'image_resize_filter' => array(
 	  	'weight' => 0,
@@ -159,7 +159,7 @@ $full_html_format = array(
   variable_set('user_picture_dimensions', '1024x1024');
   variable_set('user_picture_file_size', '800');
   variable_set('user_picture_style', 'thumbnail');
-  
+
 
   // Create an image field named "Image", enabled for the 'Basic Page' content type.
   // Many of the following values will be defaulted, they're included here as an illustrative examples.
@@ -228,7 +228,7 @@ $full_html_format = array(
     ),
   );
   field_create_instance($instance);
-  
+
    // Enable default permissions for system roles.
 //  $clean_html_permission = filter_permission_name($clean_html_format);
 //  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access comments', $clean_html_permission));
@@ -247,7 +247,7 @@ $full_html_format = array(
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
-/*	
+/*
   // Create the Editor Role for use with Workbench.
   $editor_role = new stdClass();
   $editor_role->name = 'editor';
@@ -256,7 +256,7 @@ $full_html_format = array(
  user_role_grant_permissions($editor_role->rid, array('access content', 'access comments', 'post comments', 'skip comment approval', $clean_html_perimssion, 'access administration menu', 'access administration pages', 'access content overview', 'access contextual links', 'access overlay', 'access toolbar', 'access workbench', 'access workbench access by role', 'add media from remote sources', 'administer menu', 'assign workbench access', 'create page content', 'crop any image', 'crop own images', 'edit file', 'edit own page content', 'import media', 'moderate content from draft to needs_review', 'moderate content from needs_review to draft', 'moderate content from needs_review to published' , 'revert revisions', 'use text format clean_html', 'use workbench_media add form', 'use workbench_moderation my drafts tab', 'view moderation history', 'view moderation messages', 'view own unpublished content', 'view revisions'));
   //Set this as the Editor role
   //variable_set('user_editor_role', $editor_role->rid);
-  
+
  //Create the Writer role for use with Workbench.
   $writer_role = new stdClass();
   $writer_role->name = 'writer';
@@ -278,34 +278,34 @@ $full_html_format = array(
   menu_rebuild();
 
 //WYSIWYG Settings for CKeditor based on Linux Journal Drupal special edition, page 96.
-$clean_html_settings = array( 
+$clean_html_settings = array(
 	'default' => 1,
-	'user_choose' => 0, 
-	'show_toggle' => 0, 
-	'theme' => 'advanced', 
-	'language' => 'en', 
+	'user_choose' => 0,
+	'show_toggle' => 0,
+	'theme' => 'advanced',
+	'language' => 'en',
 	'buttons' => array(
-		'default' => array( 
-			'Bold' => 1, 
+		'default' => array(
+			'Bold' => 1,
 			'Italic' => 1,
-			'Underline' => 1, 
-			'Strike' => 1, 
-			'JustifyLeft' => 1, 
-			'JustifyCenter' => 1, 
-			'JustifyRight' => 1, 
-			'JustifyBlock' => 1, 
-			'BulletedList' => 1, 
+			'Underline' => 1,
+			'Strike' => 1,
+			'JustifyLeft' => 1,
+			'JustifyCenter' => 1,
+			'JustifyRight' => 1,
+			'JustifyBlock' => 1,
+			'BulletedList' => 1,
 			'NumberedList' => 1,
 			'Outdent' => 1,
 			'Indent' => 1,
 			'Undo' => 1,
-			'Redo' => 1, 
-			'Link' => 1, 
-			'Unlink' => 1, 
-			'Anchor' => 1, 
-			'Image' => 1, 
+			'Redo' => 1,
+			'Link' => 1,
+			'Unlink' => 1,
+			'Anchor' => 1,
+			'Image' => 1,
 			'Superscript' => 1,
-			'Subscript' => 1, 
+			'Subscript' => 1,
 			'Blockquote' => 1,
 			'Cut' => 1,
 			'Copy' => 1,
@@ -317,67 +317,67 @@ $clean_html_settings = array(
 			'Styles' => 1,
 			'Table' => 1,
 			'Find' => 1,
-			'Replace' => 1, 
+			'Replace' => 1,
 			'SpellChecker' => 1,
 			'Scayt' => 1,
 			'media' => 1
-			), 
+			),
 		),
-	'toolbar_loc' => 'top', 
-	'toolbar_align' => 'left', 
-	'path_loc' => 'bottom', 
-	'resizing' => 1, 
+	'toolbar_loc' => 'top',
+	'toolbar_align' => 'left',
+	'path_loc' => 'bottom',
+	'resizing' => 1,
 	'verify_html' => 1,
 	'preformatted' => 0,
 	'convert_fonts_to_spans' => 1,
 	'remove_linebreaks' => 1,
-	'apply_source_formatting' => 1, 
+	'apply_source_formatting' => 1,
 	'paste_auto_cleanup_on_paste' => 1,
-	'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div', 
+	'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
 	'css_setting' => 'self',
 	'css_path' => '/sites/all/themes/wwuzen/css/pages.css',
 	'css_classes' => '', );
 
-	// Create the record. 
+	// Create the record.
 	$record = array(
-		'format' => 'clean_html', 
-		'editor' => 'ckeditor', 
+		'format' => 'clean_html',
+		'editor' => 'ckeditor',
 		'settings' => $clean_html_settings,
 	);
-// Save the record to the database. 
+// Save the record to the database.
 	drupal_write_record('wysiwyg', $record);
 
 //WYSIWYG Settings for CKeditor based on Linux Journal Drupal special edition, page 96.
-$full_html_settings = array( 
+$full_html_settings = array(
 	'default' => 1,
-	'user_choose' => 0, 
-	'show_toggle' => 0, 
-	'theme' => 'advanced', 
-	'language' => 'en', 
+	'user_choose' => 0,
+	'show_toggle' => 0,
+	'theme' => 'advanced',
+	'language' => 'en',
 	'buttons' => array(
-		'default' => array( 
-			'Bold' => 1, 
+		'default' => array(
+			'Bold' => 1,
 			'Italic' => 1,
-			'Underline' => 1, 
-			'Strike' => 1, 
-			'JustifyLeft' => 1, 
-			'JustifyCenter' => 1, 
-			'JustifyRight' => 1, 
-			'JustifyBlock' => 1, 
-			'BulletedList' => 1, 
+			'Underline' => 1,
+			'Strike' => 1,
+			'JustifyLeft' => 1,
+			'JustifyCenter' => 1,
+			'JustifyRight' => 1,
+			'JustifyBlock' => 1,
+			'BulletedList' => 1,
 			'NumberedList' => 1,
 			'Outdent' => 1,
 			'Indent' => 1,
 			'Undo' => 1,
-			'Redo' => 1, 
-			'Link' => 1, 
-			'Unlink' => 1, 
-			'Anchor' => 1, 
+			'Redo' => 1,
+			'Link' => 1,
+			'Unlink' => 1,
+			'Anchor' => 1,
 			'Image' => 1,
 			'TextColor' => 1,
 			'BGColor' => 1,
 			'Superscript' => 1,
-			'Subscript' => 1, 
+			'Subscript' => 1,
 			'Blockquote' => 1,
 			'Source' => 1,
 			'HorizontalRule' => 1,
@@ -394,7 +394,7 @@ $full_html_settings = array(
 			'Table' => 1,
 			'SelectAll' => 1,
 			'Find' => 1,
-			'Replace' => 1, 
+			'Replace' => 1,
 			'Flash' => 1,
 			'Smiley' => 1,
 			'CreateDiv' => 1,
@@ -403,32 +403,32 @@ $full_html_settings = array(
 			'SpellChecker' => 1,
 			'Scayt' => 1,
 			'media' => 1
-			), 
+			),
 		),
-	'toolbar_loc' => 'top', 
-	'toolbar_align' => 'left', 
-	'path_loc' => 'bottom', 
-	'resizing' => 1, 
+	'toolbar_loc' => 'top',
+	'toolbar_align' => 'left',
+	'path_loc' => 'bottom',
+	'resizing' => 1,
 	'verify_html' => 1,
 	'preformatted' => 0,
 	'convert_fonts_to_spans' => 1,
 	'remove_linebreaks' => 1,
-	'apply_source_formatting' => 1, 
+	'apply_source_formatting' => 1,
 	'paste_auto_cleanup_on_paste' => 1,
-	'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div', 
+	'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
 	'css_setting' => 'self',
 	'css_path' => '/sites/all/themes/wwuzen/css/pages.css',
 	'css_classes' => '', );
 
-	// Create the record. 
+	// Create the record.
 	$record = array(
-		'format' => 'full_html', 
-		'editor' => 'ckeditor', 
+		'format' => 'full_html',
+		'editor' => 'ckeditor',
 		'settings' => $full_html_settings,
 	);
-// Save the record to the database. 
+// Save the record to the database.
 	drupal_write_record('wysiwyg', $record);
 
-  
-//End of Configuration  
+
+//End of Configuration
 }

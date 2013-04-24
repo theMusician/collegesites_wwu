@@ -49,6 +49,9 @@ projects[auto_entitylabel][type]= "module"
 projects[cas][version] = 1.2
 projects[cas][type] = "module"
 
+projects[colors][version] = 1.0-rc1
+projects[colors][type] = "module"
+
 projects[ctools][version] = 1.3
 projects[ctools][type] = "module"
 
@@ -242,8 +245,9 @@ projects[wwurubik][type] = "theme"
 ; Libraries
 ; ---------
 
-libraries[cas][download][type] = "file"
-libraries[cas][download][url] = "http://downloads.jasig.org/cas-clients/php/current/CAS-1.3.2.tgz"
+//The cas module requires the library directory to be all uppercase
+libraries[CAS][download][type] = "file"
+libraries[CAS][download][url] = "http://downloads.jasig.org/cas-clients/php/current/CAS-1.3.2.tgz"
 
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
@@ -252,7 +256,8 @@ libraries[colorbox][download][type] = "file"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 
 libraries[fullcalendar][download][type] = "file"
-libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.5.4.zip"
+libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.6.0.zip"
+libraries[fullcalendar][download][subtree] = "fullcalendar-1.6.0/fullcalendar"
 
 libraries[htmlpurifier][download][type] = "file"
 libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.5.0.zip"
@@ -265,3 +270,7 @@ libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.a
 
 libraries[jqueryui][download][type] = "file"
 libraries[jqueryui][download][url] = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"
+
+//For use by feeds module
+libraries[simplepie][download][type] = "file"
+libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/zipball/1.3.1"
