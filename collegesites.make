@@ -64,7 +64,7 @@ projects[diff][type] = "module"
 projects[entity][version] = 1.0
 projects[entity][type] = "module"
 
-projects[entityreference][version] = 1.0-rc5
+projects[entityreference][version] = 1.0
 projects[entityreference][type] = "module"
 
 projects[email][version] = 1.2
@@ -90,6 +90,8 @@ projects[htmlpurifier][type] = "module"
 
 projects[image_caption][version] = 1.x-dev
 projects[image_caption][type] = "module"
+projects[image_caption][patch][] = "http://drupal.org/files/1188622-image-caption-no-title-2.patch"
+projects[image_caption][patch][] = "http://drupal.org/files/image-caption-html5-1918618-5.patch"
 
 projects[image_resize_filter][version] = 1.13
 projects[image_resize_filter][type]= "module"
@@ -171,19 +173,19 @@ projects[backup_migrate][type] = "module"
 projects[colorbox][version] = 1.4
 projects[colorbox][type] = "module"
 
-projects[features][version] = 2.0-beta1
+projects[features][version] = 2.0-beta2
 projects[features][type] = "module"
 
 projects[field_group][version] = 1.1
 projects[field_group][type] = "module"
 
-projects[google_analytics][version] = 1.2
+projects[google_analytics][version] = 1.3
 projects[google_analytics][type] = "module"
 
 projects[google_appliance][version] = 1.11
 projects[google_appliance][type] = "module"
 
-projects[google_appliance_suggest][version] = 1.1
+projects[google_appliance_suggest][version] = 1.2
 projects[google_appliance_suggest][type] = "module"
 
 ;Manually retrieve the icons from http://thepanz.netsons.org/post/drupal-iconizer-module-d7-icons
@@ -199,6 +201,7 @@ projects[libraries][type] = "module"
 
 projects[menu_block][version] = 2.3
 projects[menu_block][type] = "module"
+projects[menu_block][patch][] = "http://drupalcode.org/project/accordion_menu.git/blob_plain/98858e6efbe11d32100e58947d2452f5e730795a:/menu_block-7.x-2.3.patch"
 
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][type] = "module"
@@ -245,9 +248,10 @@ projects[wwurubik][type] = "theme"
 ; Libraries
 ; ---------
 
-//The cas module requires the library directory to be all uppercase
+;The cas module requires the library directory to be all uppercase
 libraries[CAS][download][type] = "file"
 libraries[CAS][download][url] = "http://downloads.jasig.org/cas-clients/php/current/CAS-1.3.2.tgz"
+libraries[CAS][download][subtree] = CAS-1.3.2/
 
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
@@ -257,7 +261,7 @@ libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/arch
 
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.6.0.zip"
-libraries[fullcalendar][download][subtree] = "fullcalendar"
+libraries[fullcalendar][download][subtree] = fullcalendar-1.6.0/fullcalendar
 
 libraries[htmlpurifier][download][type] = "file"
 libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlpurifier-4.5.0.zip"
@@ -271,6 +275,8 @@ libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.a
 libraries[jqueryui][download][type] = "file"
 libraries[jqueryui][download][url] = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"
 
-//For use by feeds module
-libraries[simplepie][download][type] = "file"
-libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/zipball/1.3.1"
+;For use by feeds module
+;libraries[simplepie][download][type] = "file"
+;libraries[simplepie][download][url] = "https://github.com/simplepie/simplepie/archive/1.3.1.tar.gz"
+;libraries[simplepie][download][subtree] = /library
+;libraries[simplepie][destination] = "sites/all/modules/feeds/libraries"
