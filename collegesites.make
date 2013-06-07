@@ -43,7 +43,7 @@ projects[addressfield][type]= "module"
 projects[advanced_help][version] = 1.0
 projects[advanced_help][type] = "module"
 
-projects[auto_entitylabel][version] = 1.1
+projects[auto_entitylabel][version] = 1.2
 projects[auto_entitylabel][type]= "module"
 
 projects[cas][version] = 1.2
@@ -133,7 +133,7 @@ projects[media][type]= "module"
 projects[media_youtube][version] = 2.0-rc3
 projects[media_youtube][type] = "module"
 
-projects[media_vimeo][version] = 1.0-beta5
+projects[media_vimeo][version] = 2.x-dev
 projects[media_vimeo][type] = "module"
 
 projects[og][version] = 2.2
@@ -180,13 +180,13 @@ projects[addanother][type] = "module"
 projects[admin_menu][version] = 3.0-rc4
 projects[admin_menu][type] = "module"
 
-projects[backup_migrate][version] = 2.5
+projects[backup_migrate][version] = 2.7
 projects[backup_migrate][type] = "module"
 
 projects[colorbox][version] = 1.4
 projects[colorbox][type] = "module"
 
-projects[features][version] = 2.0-beta2
+projects[features][version] = 2.0-rc1
 projects[features][type] = "module"
 
 projects[field_group][version] = 1.1
