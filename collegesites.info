@@ -45,6 +45,7 @@ dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = email
 dependencies[] = file_entity
+dependencies[] = flexifilter
 dependencies[] = fullcalendar
 dependencies[] = google_appliance
 dependencies[] = hierarchical_select
@@ -66,7 +67,6 @@ dependencies[] = token
 dependencies[] = wysiwyg
 dependencies[] = views
 dependencies[] = views_bulk_operations
-dependencies[] = views_slideshow
 
 ;Acilliary Contributed Modules
 
@@ -74,6 +74,7 @@ dependencies[] = admin_menu
 dependencies[] = backup_migrate
 dependencies[] = features
 dependencies[] = field_group
+dependencies[] = globalredirect
 dependencies[] = google_appliance
 dependencies[] = google_appliance_suggest
 dependencies[] = iconizer
@@ -82,6 +83,7 @@ dependencies[] = libraries
 dependencies[] = linkchecker
 dependencies[] = menu_block
 dependencies[] = nodequeue
+dependencies[] = r4032login
 dependencies[] = workbench
 dependencies[] = workbench_media
 dependencies[] = workbench_moderation

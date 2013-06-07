@@ -48,6 +48,7 @@ projects[auto_entitylabel][type]= "module"
 
 projects[cas][version] = 1.2
 projects[cas][type] = "module"
+projects[cas][patch][] = "http://drupal.org/files/enforce_tlsv1_0.patch"
 
 projects[colors][version] = 1.0-rc1
 projects[colors][type] = "module"
@@ -61,7 +62,7 @@ projects[date][type] = "module"
 projects[diff][version] = 3.2
 projects[diff][type] = "module"
 
-projects[entity][version] = 1.0
+projects[entity][version] = 1.1
 projects[entity][type] = "module"
 
 projects[entityreference][version] = 1.0
@@ -75,6 +76,12 @@ projects[feeds][type] = "module"
 
 projects[file_entity][version] = 2.0-unstable7
 projects[file_entity][type] = "module"
+
+projects[flexifilter][version] = 1.0-beta1
+projects[flexifilter][type] = "module"
+
+projects[flexslider][version] = 2.0-alpha1
+projects[flexslider][type] = "module"
 
 projects[fullcalendar][version] = 2.0
 projects[fullcalendar][type]= "module"
@@ -123,11 +130,17 @@ projects[linkit][type] = "module"
 projects[media][version] = 2.0-unstable7
 projects[media][type]= "module"
 
-projects[media_youtube][version] = 2.0-rc2
+projects[media_youtube][version] = 2.0-rc3
 projects[media_youtube][type] = "module"
 
 projects[media_vimeo][version] = 1.0-beta5
 projects[media_vimeo][type] = "module"
+
+projects[og][version] = 2.2
+projects[og][type] = "module"
+
+projects[og_vocab][version] = 1.1
+projects[og_vocab][type] = "module"
 
 projects[pathauto][version] = 1.2
 projects[pathauto][type] = "module"
@@ -153,9 +166,6 @@ projects[views][type] = "module"
 projects[views_bulk_operations][version] = 3.1
 projects[views_bulk_operations][type] = "module"
 
-projects[views_slideshow][version] = 3.0
-projects[views_slideshow][type] = "module"
-
 projects[wwuzen_gsa][download][type] = "git"
 projects[wwuzen_gsa][download][url] = "https://bitbucket.org/wwuweb/wwu-google-search-appliance.git"
 projects[wwuzen_gsa][type] = "module"
@@ -163,6 +173,9 @@ projects[wwuzen_gsa][type] = "module"
 
 ; Ancilliary Modules
 ; ------------------
+
+projects[addanother][version] = 2.1
+projects[addanother][type] = "module"
 
 projects[admin_menu][version] = 3.0-rc4
 projects[admin_menu][type] = "module"
@@ -178,6 +191,9 @@ projects[features][type] = "module"
 
 projects[field_group][version] = 1.1
 projects[field_group][type] = "module"
+
+projects[globalredirect][version] = 1.5
+projects[globalredirect][type] = "module"
 
 projects[google_analytics][version] = 1.3
 projects[google_analytics][type] = "module"
@@ -206,8 +222,14 @@ projects[menu_block][patch][] = "http://drupalcode.org/project/accordion_menu.gi
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][type] = "module"
 
+projects[r4032login][version] = 1.5
+projects[r4032login][type] = "module"
+
 projects[taxonomy_csv][version] = 5.10
 projects[taxonomy_csv][type] = "module"
+
+projects[webform][version] = 4.0-alpha6
+projects[webform][type] = "module"
 
 projects[workbench][version] = 1.2
 projects[workbench][type]= "module"
@@ -259,6 +281,9 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[colorbox][download][type] = "file"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
 
+libraries[flexslider][download][type] = "file"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/master.zip"
+
 libraries[fullcalendar][download][type] = "file"
 libraries[fullcalendar][download][url] = "http://arshaw.com/fullcalendar/downloads/fullcalendar-1.6.0.zip"
 libraries[fullcalendar][download][subtree] = fullcalendar-1.6.0/fullcalendar
@@ -268,9 +293,6 @@ libraries[htmlpurifier][download][url] = "http://htmlpurifier.org/releases/htmlp
 
 libraries[jquery][download][type] = "file"
 libraries[jquery][download][url] = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-
-libraries[jquery.cycle][download][type] = "file"
-libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.all.js"
 
 libraries[jqueryui][download][type] = "file"
 libraries[jqueryui][download][url] = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"
