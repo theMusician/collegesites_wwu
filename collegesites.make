@@ -37,7 +37,7 @@ projects[drupal][version] = "7"
 projects[accordion_menu][version] = 1.2
 projects[accordion_menu][type]= "module"
 
-projects[addressfield][version] = 1.0-beta3
+projects[addressfield][version] = 1.0-beta4
 projects[addressfield][type]= "module"
 
 projects[advanced_help][version] = 1.0
@@ -77,7 +77,7 @@ projects[feeds][type] = "module"
 projects[file_entity][version] = 2.0-unstable7
 projects[file_entity][type] = "module"
 
-projects[flexifilter][version] = 1.0-beta1
+projects[flexifilter][version] = 1.x-dev1
 projects[flexifilter][type] = "module"
 
 projects[flexslider][version] = 2.0-alpha1
