@@ -209,11 +209,20 @@ projects[google_appliance_suggest][type] = "module"
 projects[iconizer][version] = 1.2
 projects[iconizer][type]= "module"
 
+projects[imageapi_optimize][version] = 1.0
+projects[imageapi_optimize][type] = "module"
+
 projects[imagecrop][version] = 1.0-rc3
 projects[imagecrop][type]= "module"
 
+projects[ldap][version] = 2.0-beta5
+projects[ldap][type] = "module"
+
 projects[libraries][version] = 2.1
 projects[libraries][type] = "module"
+
+projects[mollom][version] = 2.6
+projects[mollom][type] = "module"
 
 projects[menu_block][version] = 2.3
 projects[menu_block][type] = "module"
