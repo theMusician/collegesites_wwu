@@ -80,7 +80,7 @@ projects[fences][type] = "module"
 projects[file_entity][version] = 2.0-unstable7
 projects[file_entity][type] = "module"
 
-projects[flexifilter][version] = 1.x-dev1
+projects[flexifilter][version] = 1.x-dev
 projects[flexifilter][type] = "module"
 
 projects[flexslider][version] = 2.0-alpha1
