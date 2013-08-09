@@ -74,6 +74,9 @@ projects[email][type] = "module"
 projects[feeds][version] = 2.0-alpha8
 projects[feeds][type] = "module"
 
+projects[fences][version] = 1.0
+projects[fences][type] = "module"
+
 projects[file_entity][version] = 2.0-unstable7
 projects[file_entity][type] = "module"
 
@@ -136,7 +139,7 @@ projects[media_youtube][type] = "module"
 projects[media_vimeo][version] = 2.x-dev
 projects[media_vimeo][type] = "module"
 
-projects[og][version] = 2.2
+projects[og][version] = 2.3
 projects[og][type] = "module"
 
 projects[og_vocab][version] = 1.1
@@ -145,7 +148,7 @@ projects[og_vocab][type] = "module"
 projects[pathauto][version] = 1.2
 projects[pathauto][type] = "module"
 
-projects[pathologic][version] = 2.10
+projects[pathologic][version] = 2.11
 projects[pathologic][type] = "module"
 
 projects[panels][version] = 3.x-dev
@@ -157,7 +160,7 @@ projects[phone][type]= "module"
 projects[token][version] = 1.5
 projects[token][type] = "module"
 
-projects[wysiwyg][version] = 2.2
+projects[wysiwyg][version] = 2.x-dev
 projects[wysiwyg][type] = "module"
 
 projects[views][version] = 3.7
@@ -183,10 +186,13 @@ projects[admin_menu][type] = "module"
 projects[backup_migrate][version] = 2.7
 projects[backup_migrate][type] = "module"
 
-projects[colorbox][version] = 1.4
+projects[colorbox][version] = 1.6
 projects[colorbox][type] = "module"
 
-projects[features][version] = 2.0-rc1
+projects[edit_profile] = 1.0-beta2
+projects[edit_profile] = "module"
+
+projects[features][version] = 2.0-rc2
 projects[features][type] = "module"
 
 projects[field_group][version] = 1.1
@@ -201,7 +207,7 @@ projects[google_analytics][type] = "module"
 projects[google_appliance][version] = 1.11
 projects[google_appliance][type] = "module"
 
-projects[google_appliance_suggest][version] = 1.2
+projects[google_appliance_suggest][version] = 1.3
 projects[google_appliance_suggest][type] = "module"
 
 ;Manually retrieve the icons from http://thepanz.netsons.org/post/drupal-iconizer-module-d7-icons
@@ -237,7 +243,10 @@ projects[r4032login][type] = "module"
 projects[taxonomy_csv][version] = 5.10
 projects[taxonomy_csv][type] = "module"
 
-projects[webform][version] = 4.0-alpha6
+projects[views_tree][version] = 2.x-dev
+projects[views_tree][type] = "module"
+
+projects[webform][version] = 4.0-alpha9
 projects[webform][type] = "module"
 
 projects[workbench][version] = 1.2
@@ -265,7 +274,7 @@ projects[rubik][type] = "theme"
 projects[tao][version] = 3.0-beta4
 projects[tao][type] = "theme"
 
-projects[zen][version] = 5.1
+projects[zen][version] = 5.3
 projects[zen][type] = "theme"
 
 projects[wwuzen][download][type] = "git"
@@ -285,7 +294,7 @@ libraries[CAS][download][url] = "http://downloads.jasig.org/cas-clients/php/curr
 libraries[CAS][download][subtree] = CAS-1.3.2/
 
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2/ckeditor_4.2_standard.zip"
 
 libraries[colorbox][download][type] = "file"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
