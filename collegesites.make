@@ -246,8 +246,32 @@ projects[taxonomy_csv][type] = "module"
 projects[views_tree][version] = 2.x-dev
 projects[views_tree][type] = "module"
 
-projects[webform][version] = 4.0-alpha9
+projects[webform][version] = 4.0-alpha10
 projects[webform][type] = "module"
+
+; ----------
+; WEBFORM ALTERNATE UI - versions based on a Drupal Gardens export.
+; @see https://drupal.org/node/1033462 for reasoning.
+
+projects[form_builder][subdir] = contrib
+projects[form_builder][version] = 0.9
+projects[form_builder][patch][] = http://drupal.org/files/1033462-webform_alt_ui-form_builder-drupal-gardens.patch
+
+projects[options_element][subdir] = contrib
+projects[options_element][download][type] = git
+projects[options_element][download][url] = http://git.drupal.org/project/options_element.git
+projects[options_element][download][branch] = 7.x-1.x
+projects[options_element][download][tag] = 7.x-1.4
+projects[options_element][patch][] = http://drupal.org/files/1033462-webform_alt_ui-options_element-drupal-gardens.patch
+
+projects[webform_alt_ui][subdir] = contrib
+projects[webform_alt_ui][version] = 1.0-alpha4
+projects[webform_alt_ui][patch][] = http://drupal.org/files/1033462-webform_alt_ui-webform_alt_ui-drupal-gardens.patch
+
+projects[ux_elements][version] = 1.0-beta1
+projects[ux_elements][subdir] = contrib
+projects[ux_elements][patch][] = http://drupal.org/files/issues/1224568-ux_elements_redeclare.patch
+; ----------
 
 projects[workbench][version] = 1.2
 projects[workbench][type]= "module"
@@ -294,7 +318,7 @@ libraries[CAS][download][url] = "http://downloads.jasig.org/cas-clients/php/curr
 libraries[CAS][download][subtree] = CAS-1.3.2/
 
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2/ckeditor_4.2_standard.zip"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.2/ckeditor_4.2_full.zip"
 
 libraries[colorbox][download][type] = "file"
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/master.zip"
