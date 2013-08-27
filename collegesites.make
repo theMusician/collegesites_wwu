@@ -48,13 +48,14 @@ projects[auto_entitylabel][type]= "module"
 
 projects[cas][version] = 1.2
 projects[cas][type] = "module"
-projects[cas][patch][] = "http://drupal.org/files/enforce_tlsv1_0.patch"
+projects[cas][patch][] = "https://drupal.org/files/enforce_tlsv1_0.patch"
 
 projects[colors][version] = 1.0-rc1
 projects[colors][type] = "module"
 
 projects[ctools][version] = 1.3
 projects[ctools][type] = "module"
+projects[ctools][patch[] = "https://drupal.org/files/ctools-1925018-61.patch"
 
 projects[date][version] = 2.6
 projects[date][type] = "module"
@@ -62,7 +63,7 @@ projects[date][type] = "module"
 projects[diff][version] = 3.2
 projects[diff][type] = "module"
 
-projects[entity][version] = 1.1
+projects[entity][version] = 1.2
 projects[entity][type] = "module"
 
 projects[entityreference][version] = 1.0
@@ -100,8 +101,8 @@ projects[htmlpurifier][type] = "module"
 
 projects[image_caption][version] = 1.x-dev
 projects[image_caption][type] = "module"
-projects[image_caption][patch][] = "http://drupal.org/files/1188622-image-caption-no-title-2.patch"
-projects[image_caption][patch][] = "http://drupal.org/files/image-caption-html5-1918618-5.patch"
+projects[image_caption][patch][] = "https://drupal.org/files/1188622-image-caption-no-title-2.patch"
+projects[image_caption][patch][] = "https://drupal.org/files/image-caption-html5-1918618-5.patch"
 
 projects[image_resize_filter][version] = 1.13
 projects[image_resize_filter][type]= "module"
@@ -232,7 +233,7 @@ projects[mollom][type] = "module"
 
 projects[menu_block][version] = 2.3
 projects[menu_block][type] = "module"
-projects[menu_block][patch][] = "http://drupalcode.org/project/accordion_menu.git/blob_plain/98858e6efbe11d32100e58947d2452f5e730795a:/menu_block-7.x-2.3.patch"
+projects[menu_block][patch][] = "http://drupalcode.org/project/accordion_menu.git/blob_plain/1647e2693b347e9a3bd68b5609ad87d535d59149:/menu_block-7.x-2.3.patch"
 
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][type] = "module"
@@ -248,30 +249,6 @@ projects[views_tree][type] = "module"
 
 projects[webform][version] = 4.0-alpha10
 projects[webform][type] = "module"
-
-; ----------
-; WEBFORM ALTERNATE UI - versions based on a Drupal Gardens export.
-; @see https://drupal.org/node/1033462 for reasoning.
-
-projects[form_builder][subdir] = contrib
-projects[form_builder][version] = 0.9
-projects[form_builder][patch][] = http://drupal.org/files/1033462-webform_alt_ui-form_builder-drupal-gardens.patch
-
-projects[options_element][subdir] = contrib
-projects[options_element][download][type] = git
-projects[options_element][download][url] = http://git.drupal.org/project/options_element.git
-projects[options_element][download][branch] = 7.x-1.x
-projects[options_element][download][tag] = 7.x-1.4
-projects[options_element][patch][] = http://drupal.org/files/1033462-webform_alt_ui-options_element-drupal-gardens.patch
-
-projects[webform_alt_ui][subdir] = contrib
-projects[webform_alt_ui][version] = 1.0-alpha4
-projects[webform_alt_ui][patch][] = http://drupal.org/files/1033462-webform_alt_ui-webform_alt_ui-drupal-gardens.patch
-
-projects[ux_elements][version] = 1.0-beta1
-projects[ux_elements][subdir] = contrib
-projects[ux_elements][patch][] = http://drupal.org/files/issues/1224568-ux_elements_redeclare.patch
-; ----------
 
 projects[workbench][version] = 1.2
 projects[workbench][type]= "module"
@@ -298,7 +275,7 @@ projects[rubik][type] = "theme"
 projects[tao][version] = 3.0-beta4
 projects[tao][type] = "theme"
 
-projects[zen][version] = 5.3
+projects[zen][version] = 5.4
 projects[zen][type] = "theme"
 
 projects[wwuzen][download][type] = "git"
