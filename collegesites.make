@@ -224,6 +224,7 @@ projects[imagecrop][type]= "module"
 
 projects[ldap][version] = 2.0-beta5
 projects[ldap][type] = "module"
+projects[ldap][patch][] = "https://drupal.org/files/ldap_servers-fix-mycrpt-key.patch"
 
 projects[libraries][version] = 2.1
 projects[libraries][type] = "module"
