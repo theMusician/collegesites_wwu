@@ -164,6 +164,10 @@ projects[token][type] = "module"
 projects[wysiwyg][version] = 2.x-dev
 projects[wysiwyg][type] = "module"
 
+projects[wysiwygpatch][download][type] = "git"
+projects[wysiwygpatch][download][url] = "https://bronsem@bitbucket.org/wwuweb/wysiwygpatch.git"
+projects[wysiwygpatch][type] = "module"
+
 projects[views][version] = 3.7
 projects[views][type] = "module"
 
@@ -229,6 +233,12 @@ projects[ldap][patch][] = "https://drupal.org/files/ldap_servers-fix-mycrpt-key.
 projects[libraries][version] = 2.1
 projects[libraries][type] = "module"
 
+projects[menu_view_unpublsihed][version] = 1.0-beta3
+projects[menu_view_unpublsihed][type] = "module"
+
+projects[module_filter][version] = 1.8
+projects[module_filter][type] = "module"
+
 projects[mollom][version] = 2.6
 projects[mollom][type] = "module"
 
@@ -244,6 +254,12 @@ projects[r4032login][type] = "module"
 
 projects[taxonomy_csv][version] = 5.10
 projects[taxonomy_csv][type] = "module"
+
+projects[views_accordion][version] = 1.0-rc2
+projects[views_accordion][type] = "module"
+
+projects[views_responsive_grid][version] = 1.3
+projects[views_responsive_grid][type] = "module"
 
 projects[views_tree][version] = 2.x-dev
 projects[views_tree][type] = "module"
