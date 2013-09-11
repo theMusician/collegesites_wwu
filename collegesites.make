@@ -233,8 +233,8 @@ projects[ldap][patch][] = "https://drupal.org/files/ldap_servers-fix-mycrpt-key.
 projects[libraries][version] = 2.1
 projects[libraries][type] = "module"
 
-projects[menu_view_unpublsihed][version] = 1.0-beta3
-projects[menu_view_unpublsihed][type] = "module"
+projects[menu_view_unpublished][version] = 1.0-beta3
+projects[menu_view_unpublished][type] = "module"
 
 projects[module_filter][version] = 1.8
 projects[module_filter][type] = "module"
