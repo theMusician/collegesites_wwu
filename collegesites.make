@@ -134,7 +134,7 @@ projects[linkit][type] = "module"
 projects[media][version] = 2.0-unstable7
 projects[media][type]= "module"
 
-projects[media_youtube][version] = 2.0-rc3
+projects[media_youtube][version] = 2.x-dev
 projects[media_youtube][type] = "module"
 
 projects[media_vimeo][version] = 2.x-dev
@@ -194,13 +194,16 @@ projects[backup_migrate][type] = "module"
 projects[colorbox][version] = 1.6
 projects[colorbox][type] = "module"
 
+projects[clean_markup][version] = 2.0
+projects[clean_markup][type] = "module"
+
 projects[edit_profile] = 1.0-beta2
 projects[edit_profile] = "module"
 
 projects[features][version] = 2.0-rc2
 projects[features][type] = "module"
 
-projects[field_group][version] = 1.1
+projects[field_group][version] = 1.2
 projects[field_group][type] = "module"
 
 projects[globalredirect][version] = 1.5
@@ -249,7 +252,7 @@ projects[menu_block][patch][] = "http://drupalcode.org/project/accordion_menu.gi
 projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][type] = "module"
 
-projects[r4032login][version] = 1.5
+projects[r4032login][version] = 1.6
 projects[r4032login][type] = "module"
 
 projects[taxonomy_csv][version] = 5.10
@@ -286,7 +289,7 @@ projects[xmlsitemap][type] = "module"
 ; Themes
 ; --------
 
-projects[rubik][version] = 4.0-beta8
+projects[rubik][version] = 4.0-beta9
 projects[rubik][type] = "theme"
 
 projects[tao][version] = 3.0-beta4
